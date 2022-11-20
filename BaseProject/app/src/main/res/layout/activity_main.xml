@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_teacher"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/tt_teachers_b_ru"
@@ -19,12 +19,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_student"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="@string/tt_students_b_ru"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/button_teacher"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />

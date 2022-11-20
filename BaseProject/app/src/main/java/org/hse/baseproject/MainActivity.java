@@ -12,15 +12,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View button = findViewById(R.id.button);
-        View button2 = findViewById(R.id.button2);
+        View buttonStudent = findViewById(R.id.button_student);
+        View buttonTeacher = findViewById(R.id.button_teacher);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonTeacher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             { showToast("Расписание для преподавателей"); };
         });
-        button2.setOnClickListener(new View.OnClickListener() {
+        buttonStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             { showToast("Расписание для студентов"); };
