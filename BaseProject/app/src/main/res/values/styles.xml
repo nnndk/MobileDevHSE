@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActivitiesStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+    <style name="ActivitiesStyle.TeacherStyle">
+
+    </style>
+
+    <style name="ActivitiesStyle.StudentStyle">
+
+    </style>
+</resources>

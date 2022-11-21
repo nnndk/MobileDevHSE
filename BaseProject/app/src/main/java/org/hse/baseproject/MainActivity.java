@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -15,20 +15,27 @@ public class MainActivity extends AppCompatActivity {
         View buttonStudent = findViewById(R.id.button_student);
         View buttonTeacher = findViewById(R.id.button_teacher);
 
-        buttonTeacher.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            { showToast("Расписание для преподавателей"); };
-        });
         buttonStudent.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            { showToast("Расписание для студентов"); };
+            public void onClick(View v) {
+                showStudent();
+            }
+        });
+        buttonTeacher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showTeacher();
+            }
         });
     }
 
-    private void showToast(String text) {
-        Toast.makeText(getApplicationContext(), text,
-                Toast.LENGTH_SHORT).show();
+    private void showStudent() {
+        Intent intent = new Intent(this, StudentActivity.class);
+        startActivity(intent);
+    }
+
+    private void showTeacher() {
+        Intent intent = new Intent(this, TeacherActivity.class);
+        startActivity(intent);
     }
 }

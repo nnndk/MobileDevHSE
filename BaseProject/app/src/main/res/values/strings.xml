@@ -1,5 +1,22 @@
 <resources>
+    <!--Main activity-->
     <string name="app_name">Timetable for HSE FE</string>
     <string name="tt_students_b_ru">Расписание для студентов</string>
     <string name="tt_teachers_b_ru">Расписание для преподавателей</string>
+
+    <!--Teacher & student activities-->
+    <string name="scheduleDay">Расписание\nна день</string>
+    <string name="scheduleWeek">Расписание\nна неделю</string>
+
+    <!--Teacher activity-->
+    <string name="selectTeacher">Выберите преподавателя</string>
+    <string name="timeNow">Сейчас:</string>
+    <string name="lessonStatus">Идёт пара / Нет пар</string>
+    <string name="subject">Дисциплина</string>
+    <string name="cabinet">Кабинет</string>
+    <string name="corp">Корпус</string>
+    <string name="teacher">Преподаватель</string>
+S
+    <!--Student activity-->
+    <string name="selectGroup">Выберите группу</string>
 </resources>
